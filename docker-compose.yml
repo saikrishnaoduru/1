@@ -42,7 +42,7 @@ services:
     ports:
       - 3306:3306
     environment:
-      MYSQL_HOST: database-1.c48bi0pknxps.us-east-1.rds.amazonaws.com
+      MYSQL_HOST: database-1.c48bi0pknxps.us-east-1.rds.amazonaws.com/testdb
       MYSQL_User: "admin"
       MYSQL_PASSWORD: "rootroot123"
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
