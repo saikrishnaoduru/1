@@ -49,7 +49,8 @@ services:
 
   mongodb:
     image: mongo:latest
-    container_name: mongo-container
+    container_name: mongo
+    restart: always
     network_mode: host
     hostname: 172.31.82.118
     ports:
