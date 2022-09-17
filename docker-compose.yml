@@ -51,9 +51,12 @@ services:
     image: mongo:latest
     container_name: mongo-container
     network_mode: host
-    hostname: localhost
+    hostname: 172.31.82.118
     ports:
       - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: rootroot123
 
 
   user-service:
